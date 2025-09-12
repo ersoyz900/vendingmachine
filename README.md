@@ -12,7 +12,7 @@ public class VendingMachine {
             this.name = name;
             this.quantity = quantity;
             this.price = price;
-        }
+        } 
     }
 
     static List<Drink> drinks = new ArrayList<>();
@@ -68,7 +68,7 @@ public class VendingMachine {
             String coin = scanner.nextLine().trim();
             if (coin.equalsIgnoreCase("tamam")) break;
 
-            if (coin.equals("1$")) totalInserted += 1.0;
+            if (coin.equals("1$")) totalInserted += 1.0; 
             else if (coin.equals("50c")) totalInserted += 0.5;
             else if (coin.equals("25c")) totalInserted += 0.25;
             else if (coin.equals("10c")) totalInserted += 0.1;
